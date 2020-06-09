@@ -15,26 +15,28 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
-    <div class="container-fluid">
-
-    
-
-      <nav id="nav-menu-container">
-
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Products</a></li>
-          <li><a href="#portfolio">Production</a></li>
-          <li><a href="#team">Sustainability</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      </nav>
-    </nav>
-    </div><object data="" type=""></object>
-  </header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="topnav" id="myTopnav">
+    <a href="#intro" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Products</a>
+    <a href="#portfolio">Production</a>
+    <a href="#team">Sustainability</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 
   <!--==========================
     Home Section
@@ -236,7 +238,7 @@
         <div class="row">
 
           <div class="footer-info">
-            <h3>KTM Home Textile</h3>
+            <h3>KTM Blanets</h3>
             <p>KTM Blankets is an India-based textile manufacturer and supplier, dealing in mink and polar fleece blankets, with an experience of over 30 years.</p>
           </div>
 
@@ -247,7 +249,7 @@
             <p>
               <strong>Factory:</strong> <br><br>
               Raghav Woolen Mills <br>
-              Bapoli Toad, Panipat (132103) <br>
+              Bapoli Road, Panipat (132103) <br>
               Haryana, India <br><br><br>
               <strong>Showroom:</strong> <br><br>
               KTM Impex Pvt. Ltd.<br>
@@ -264,7 +266,6 @@
         &copy; Copyright <strong>KTM Blankets</strong>. All Rights Reserved
       </div>
       
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+ 
 
 </body>
