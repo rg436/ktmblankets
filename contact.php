@@ -1,6 +1,6 @@
 <?php
 
-if($_POST["submit"]) {
+
     $recipient="ktmblanketsindia@gmail.com";
     $subject="Query Alert";
     $sender=$_POST["name"];
@@ -9,10 +9,14 @@ if($_POST["submit"]) {
     $message=$_POST["message"];
 
     $mailBody="Name: $sender\nEmail: $senderEmail\nCountry: $senderCountry\n\n$message";
+    $headers  = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
+    $headers .= "From: ". $sender. "\r\n";
+    $headers .= "Reply-To: ". $sender. "\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion();
+    $headers .= "X-Priority: 1" . "\r\n";
+    mail('ktmblanketsindia@gmail.com', $subject, $mailBody, $headers);
+    echo '<p>Your mail has been sent!</p>';
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent. </p>";
-}
 
 ?>
