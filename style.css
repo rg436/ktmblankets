@@ -280,16 +280,23 @@ h2, h3, h4, h5, h6 {
   margin-right: auto;
   font-size: 35px;
 }
+rgin-top: 20px;
+}
 #portfolio .image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
   height: 50%;
-  
-  margin-top: 20px;
+}
+#portfolio .row {
+  display: flex;
 }
 
+#portfolio .column {
+  flex: 33.33%;
+  padding: 5px;
+}
 
 
 /* Team Section

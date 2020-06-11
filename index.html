@@ -134,14 +134,29 @@
         <p class="description">Our manufacturing unit, M/s Raghav Woolen Mills has a fully integrated infrastructure for knitting, dyeing, processing, printing, finishing and packaging. Our process houses are run by a well experienced team which has been built over a long period of time. We encourage our buyers to pay a visit to our manufacturing facility and look at the measures we take to ensure the best possible quality.</p><br>
         <p class="description1">An ISO 9001:2015 Certified Organization</p><br>
         <p class="description2">Photo Gallery</p>
-        <img src="1.jpeg" alt="" width="350" height="250" class="image">
-        <img src="2.jpeg" alt="" width="350" height="250" class="image">
+        <div class="row">
+          <div class="column">
+            <img src="1.jpeg" alt="" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="4.jpeg" alt="" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="7.jpeg" alt="" style="width:100%">
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="2.jpeg" alt="" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="5.jpeg" alt="" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="6.jpeg" alt="" style="width:100%">
+          </div>
+        </div>
         
-        <img src="4.jpeg" alt="" width="350" height="250" class="image">
-        <img src="5.jpeg" alt="" width="350" height="250" class="image">
-        <img src="6.jpeg" alt="" width="350" height="250" class="image">
-        <img src="7.jpeg" alt="" width="350" height="250" class="image">
-
 
     </section>
     
@@ -162,8 +177,8 @@
               <div class="member-info">
                 
                   <h4>Saving Water</h4>
-                  <span>Zero Liquid Discharge: We were the absolute first mink blanket manufacturing company in India to implement the zero liquid discarge technology, thereby recycling every last possible drop of water. </span>
-                  
+                  <span>Zero Liquid Discharge: We were the absolute first mink blanket manufacturing company in India to implement the zero liquid discarge technology, thereby recycling every last possible drop of water. </span><br>
+                  <img src="zld.png" alt="" style="width: 40%;"><br><br>
                 </div>
               </div>
 
@@ -177,7 +192,7 @@
                 <div class="member-info-content">
                   <h4>Human Rights</h4>
                   <span>Our team is as much of a family to us as our families at home. We are really particular about the protection of each and every employee's human rights. We have been complianced with many social and governmental audits in this regard and we stand strong in our mission to make our industrial work sustainable. </span>
-                 
+                  <img src="HR.jpg" alt="" style="width: 40%;"><br><br>
                 </div>
               </div>
             </div>
@@ -189,8 +204,8 @@
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Ethics In Business</h4>
-                  <span>Being one of the oldest firms in the trade, as well as being a family run business, we value ethics over absolutely any other aspect of the corporate ecosystem. We have a history of building long and strong relationships with our customers and suppliers.</span>
-                  
+                  <span>Being one of the oldest firms in the trade, as well as being a family run business, we value ethics over absolutely any other aspect of the corporate ecosystem. We have a history of building long and strong relationships with our customers and suppliers.</span><br><br>
+                  <img src="be.jpeg" alt="" style="width: 40%;">
                 </div>
               </div>
             </div>
@@ -210,18 +225,18 @@
         </div>
         <form method="POST" action="contact.php">
          <label for="name">Name</label>
-         <input type="text" id="name" name="name" placeholder="Your name..">
+         <input type="text" id="name" name="name" placeholder="Your name.." required>
     
          <label for="email">Email</label>
-         <input type="text" id="email" name="email" placeholder="Your email..">
+         <input type="text" id="email" name="email" placeholder="Your email.." required>
     
          <label for="country">Country</label>
-         <input type="text" id="country" name="country" placeholder="Your country..">
+         <input type="text" id="country" name="country" placeholder="Your country.." required>
 
-         <label for="message">Subject</label>
+         <label for="message">Message</label>
          <textarea id="message" name="message" placeholder="message" style="height:200px"></textarea>
     
-         <input type="submit" value="Submit">
+         <input type="submit" name="submit" value="Submit">
         </form>
 
       </div>
